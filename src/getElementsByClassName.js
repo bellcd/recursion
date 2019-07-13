@@ -16,7 +16,7 @@ var getElementsByClassName = function(className, currentNode = document.body, re
     if (currentNode.nodeType === 1 && currentNode.classList.contains(className)) {
       result.push(currentNode);
     }
-    // is there a way to avoid using a forEach() loop here ??
+    // TODO: is there a way to avoid using a forEach() loop here ??
     Array.from(currentNode.childNodes).forEach(node => {
       // loop through childNodes list
       // invoke recursion on each child node,

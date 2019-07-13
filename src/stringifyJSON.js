@@ -35,7 +35,7 @@ var stringifyJSON = function(obj, resultObj, counter = 0) {
   } else {
     // recursive cases, is an object or array
     if (Array.isArray(obj)) {
-      // loop through array if needed (is there a way to refactor this without looping here??)
+      // TODO: loop through array if needed (is there a way to refactor this without looping here??)
           // shift off 1st value from obj, push onto resultObj inside []
           // return invocation of obj
       let currentThing = [];
